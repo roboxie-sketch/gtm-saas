@@ -11,10 +11,7 @@ export default function AuthCallbackPage() {
 
   useEffect(() => {
     const handleAuth = async () => {
-      // This reads the session from the URL and saves it in the browser
       await supabase.auth.getSession();
-
-      // Redirect user to dashboard after login
       router.replace("/dashboard");
     };
 
@@ -22,4 +19,8 @@ export default function AuthCallbackPage() {
   }, [router]);
 
   return (
-    <div className
+    <div className="min-h-screen flex items-center justify-center">
+      <p className="text-lg">Logging you in…</p>
+    </div>
+  );
+}
