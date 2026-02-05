@@ -8,11 +8,12 @@ export default function LoginPage() {
 
   const login = async () => {
     await supabase.auth.signInWithOtp({
-      email: email,
-      options: {
-        emailRedirectTo: "http://localhost:3000/auth/callback",
-      },
-    });
+  email,
+  options: {
+    emailRedirectTo: `${window.location.origin}/auth/callback`,
+  },
+});
+
 
     alert("Magic link sent! Check your email.");
   };
