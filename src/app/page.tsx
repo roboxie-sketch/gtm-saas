@@ -6,7 +6,7 @@ export default function HomePage() {
       {/* HERO */}
       <section className="max-w-6xl mx-auto px-8 py-24 text-center">
         <h1 className="text-6xl font-bold leading-tight">
-          DemandCurve
+          DemandCurve App is Live 🚀
         </h1>
 
         <p className="text-xl text-gray-600 mt-6 max-w-2xl mx-auto">
